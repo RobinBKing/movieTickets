@@ -7,6 +7,10 @@ function Movie(movieTitle, movieTime){
 Movie.prototype.fullMovie = function() {
   return this.movieTitle + ": " + this.movieTime;
 };
+function Ticket(ticketType, price){
+  this.ticketType = ticketType;
+  this.price = price;
+};
 // //interface
 // $(document).ready(function() {
 // });
