@@ -11,6 +11,9 @@ function Ticket(ticketType, price){
   this.ticketType = ticketType;
   this.price = price;
 };
+Ticket.prototype.fullTicket = function() {
+  return this.ticketType + ": " + this.price;
+};
 // //interface
 // $(document).ready(function() {
 // });
