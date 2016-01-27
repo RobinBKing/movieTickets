@@ -9,7 +9,49 @@
   </head>
   <body>
     <div class="Container">
+      <h1>Address book</h1>
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Add a contact:</h2>
+          <form id="newMovie">
+            <!-- contact -->
+            <div class="form-group">
+              <label for="newMovieTitle">Movie</label>
+              <input id="newMovieTitle" type="text" class="form-control">
+            </div>
+            <div class="form-group">
+              <label for="newMovieTime">Time</label>
+              <input id="newMovieTime" type="text" class="form-control">
+            </div>
+            <!-- address -->
+            <div id="newTickets">
+               <div class="newTicket">
+                 <div class="form-group">
+                   <label for="newTicketType">Ticket Type</label>
+                   <input id="newTicketType" type="text" class="form-control">
+                 </div>
+               </div>
+             </div>
+            <span class="btn btn-primary" id="addTicket">Another Ticket</span>
+             <!-- addrss end -->
+            <button type="submit" class="btn">Purchase</button>
+          </form>
+          <h2>Contacts:</h2>
+          <ul id="contacts">
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <div id="showContact">
+            <h2></h2>
+            <p id="notp">First name: <span class="first-name"></span></p>
+            <p>Last name: <span class="last-name"></span></p>
+            <p>Addresses:</p>
+            <ul id="addresses">
 
+            </ul>
+          </div>
+        </div>
+      </div>
     </div>
 
   </body>

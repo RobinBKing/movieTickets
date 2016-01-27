@@ -1,4 +1,4 @@
-describe('template', function() {
+describe('Movies', function() {
   it("creates a new movie with given properties", function() {
     var testMovie = new Movie("Raiders of the Lost Ark", "1:00 PM");
     expect(testMovie.movieTitle).to.equal("Raiders of the Lost Ark");
@@ -10,12 +10,15 @@ describe('template', function() {
     expect(testMovie.fullMovie()).to.equal("Raiders of the Lost Ark: 1:00 PM");
   });
   it("creates a new ticket with given properties", function() {
-    var testTicket = new Ticket("Senior", "$10.00");
+    var testTicket = new Ticket("Senior");
     expect(testTicket.ticketType).to.equal("Senior");
-    expect(testTicket.price).to.equal("$10.00");
+  });
+  it("adds the price method to all tickets", function() {
+    var testTicket = new Ticket("Senior");
+    expect(testTicket.ticketPrice()).to.equal("$10.00");
   });
   it("adds the fullTicket method to all tickets", function() {
-    var testTicket = new Ticket("Senior", "$10.00");
+    var testTicket = new Ticket("Senior");
     expect(testTicket.fullTicket()).to.equal("Senior: $10.00");
   });
 });
