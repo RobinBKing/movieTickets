@@ -4,7 +4,9 @@ function Movie(movieTitle, movieTime){
   this.movieTime = movieTime;
   this.tickets = [];
 };
-
+Movie.prototype.fullMovie = function() {
+  return this.movieTitle + ": " + this.movieTime;
+};
 // //interface
 // $(document).ready(function() {
 // });
