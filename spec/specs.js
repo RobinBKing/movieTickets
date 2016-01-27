@@ -1,5 +1,8 @@
 describe('template', function() {
-  it("is true/fals some behavior", function() {
-    expect(notTriangle(10, 10, 20)).to.equal(true);
+  it("creates a new movie with given properties", function() {
+    var testMovie = new Movie("Raiders of the Lost Ark", "1:00 PM");
+    expect(testMovie.movieTitle).to.equal("Raiders of the Lost Ark");
+    expect(testMovie.movieTime).to.equal("1:00 PM");
+    expect(testMovie.tickets).to.eql([]);
   });
 });
